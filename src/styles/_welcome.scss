@@ -1,0 +1,22 @@
+.welcome-con {
+  @extend %hun;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  z-index: 10;
+  // display: none;
+  ul {
+    list-style-type: none;
+    li {
+      float: left;
+      margin: 4px;
+      font-size: 5vw;
+      color: black;
+      opacity: 0;
+    }
+  }
+}

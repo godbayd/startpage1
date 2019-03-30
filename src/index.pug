@@ -1,0 +1,27 @@
+html
+  head
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title [ Spawn H U B ]
+  body
+    .con
+      .search-con
+        form(action="http://www.google.com/search" method="GET")
+          input(type="text" name="query" placeholder="google search")
+          input(type="submit" value="search")
+      - for (var r = 0; r < 2; r++)
+        .row
+          - for (var i = 0; i < 2; i++)
+            .cell
+              .title-bar
+                h4.title
+              .link-con
+                ul
+
+      .link-effect-con
+        .text-con
+          h1.link-name
+      .welcome-con
+        ul
+          each letter in ['W','e','l','c','o','m','e',' ','S','y','m','m','e','t','r','i','c','o','n']
+            li #{letter}
+    script(src="http://localhost:3000/livereload.js")

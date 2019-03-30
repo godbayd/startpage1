@@ -1,0 +1,21 @@
+.link-effect-con {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @extend %hun;
+  pointer-events: none;
+  display: none;
+  .text-con {
+    background-color: white;
+    opacity: 0.4;
+    max-width: 80%;
+    padding: 10vw;
+    h1.link-name {
+      color: black;
+      font-size: 5vw;
+    }
+  }
+}
