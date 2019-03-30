@@ -3,6 +3,8 @@ import cellsModel from './cellsModel'
 import './js/welcome_animation'
 import './js/link-hover-effect'
 
+window.addEventListener('load', () => document.querySelector('body').style.visibility = 'visible')
+
 const select = e => document.querySelector(e),
       selectAll = e => Array.from(document.querySelectorAll(e));
 
